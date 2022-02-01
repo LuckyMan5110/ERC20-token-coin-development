@@ -1,626 +1,108 @@
-Contribution: 2020-06-02 00:00
+# Ethereum Developer: Create a New Cryptocurrency in Blockchain
 
-Contribution: 2020-06-02 00:01
+This code base is a part of e-learning course to create a new cyptocurrency in Blockchain [Ethereum Developer: Create a New Cryptocurrency with Ethereum](https://www.toshacademy.com/courses/ethereum-developer-create-a-new-cryptocurrency-with-ethereum?utm_source=github&utm_medium=coin-development-repo) hosted at [Tosh Academy](https://www.toshacademy.com/collections/blockchain?utm_source=github&utm_medium=coin-development-repo). 
 
-Contribution: 2020-06-02 00:02
+Learn how to Create a New Cryptocurrency in Blockchain.
 
-Contribution: 2020-06-03 00:00
+## Getting Started
 
-Contribution: 2020-06-03 00:01
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Contribution: 2020-06-05 00:00
+### Prerequisites
 
-Contribution: 2020-06-05 00:01
+* [node](https://nodejs.org/en/download/)
 
-Contribution: 2020-06-05 00:02
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. The Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
-Contribution: 2020-06-06 00:00
 
-Contribution: 2020-06-06 00:01
+* [npm](https://www.npmjs.com/package/npm)
 
-Contribution: 2020-06-06 00:02
+npm makes it easy for JavaScript developers to share and reuse code, and it makes it easy to update the code that you're sharing.npm is a way to reuse code from other developers, and also a way to share your code with them, and it makes it easy to manage the different versions of code.
 
-Contribution: 2020-06-06 00:03
 
-Contribution: 2020-06-08 00:00
+* [truffle](https://www.npmjs.com/package/truffle/tutorial)
 
-Contribution: 2020-06-08 00:01
+Truffle is a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier. With Truffle, you get:
+>Built-in smart contract compilation, linking, deployment and binary management.
+>Automated contract testing with Mocha and Chai.
+>Configurable build pipeline with support for custom build processes.
+>Scriptable deployment & migrations framework.
+>Network management for deploying to many public & private networks.
+>Interactive console for direct contract communication.
+>Instant rebuilding of assets during development.
+>External script runner that executes scripts within a Truffle environment.
 
-Contribution: 2020-06-08 00:02
 
-Contribution: 2020-06-08 00:03
+* Rpc client preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
 
-Contribution: 2020-06-09 00:00
+### Setting up the environment
 
-Contribution: 2020-06-09 00:01
+* Installing Node.js [node] 
 
-Contribution: 2020-06-09 00:02
+If you're using OS X or Windows, the best way to install Node.js is to use one of the installers from the Node.js download page.If you're     using Linux, you can use the installer, or you can check NodeSource's binary distributions to see whether or not there's a more recent version that works with your system.
 
-Contribution: 2020-06-09 00:03
+```
+$ sudo apt-get install nodejs 
+```
+Test: Run node -v. To check the version the of installed nodejs.
 
-Contribution: 2020-06-10 00:00
+* Install [npm](https://www.npmjs.com/package/npm)
 
-Contribution: 2020-06-10 00:01
+Node comes with npm installed so you should have a version of npm. However, npm gets updated more frequently than Node does, so you'll want to make sure it's the latest version.
 
-Contribution: 2020-06-10 00:02
+```
+$ npm install npm@latest -g
+```
+Test: Run npm -v. To check the version the of installed npm.
 
-Contribution: 2020-06-10 00:03
 
-Contribution: 2020-06-11 00:00
+## Getting started(Quick Usage)
 
-Contribution: 2020-06-12 00:00
+* Clone the repository on your local machine.
+```
+$ git clone https://github.com/blockchain-council/coin-development.git
+```
+* "cd" into the cloned repository from command line.
+```
+$ cd ERC20-token-coin-development
+```
+* Then run the below command which lets the dependencies from package.json gets installed locally for this particular project. The major requirements are truffle, testrpc, babel-register and babel-polyfill.
+```
+$ npm install
+```
 
-Contribution: 2020-06-12 00:01
+* Then run the below command to start compling the contract:
 
-Contribution: 2020-06-13 00:00
+```
+$ truffle compile
+```
 
-Contribution: 2020-06-13 00:01
+You can also run truffle migrate and truffle test to compile your contracts, deploy those contracts to the network, and run their associated unit tests.
 
-Contribution: 2020-06-13 00:02
+Be sure you're connected to an ethereum client before running these commands. If you're new, install testrpc to run a local blockchain RPC server. After that, simply run testrpc in a new tab.
 
-Contribution: 2020-06-13 00:03
+## Authors
 
-Contribution: 2020-06-13 00:04
+[**Toshendra Sharma**](https://www.udemy.com/user/toshendrasharma2/)
 
-Contribution: 2020-06-14 00:00
+Toshendra Sharma is the founder & CEO of [RecordsKeeper](https://recordskeeper.co), a Blockchain-based record keeping solution for businesses & also the founder of [Toshblocks](https://www.toshblocks.com), A Blockchain Consulting & Development. Toshendra also founded [Blockchain Council](https://www.blockchain-council.org) to bring elite Blockchain experts together on a single platform.
 
-Contribution: 2020-06-14 00:01
+Earlier, he founded Appvigil (Wegilant) in Nov 2011 while pursuing my Masters in Application Security from IIT Bombay, India. Appvigil is the Mobile App Vulnerability Scanner on Cloud. He was heading the team as CEO. The company has won many awards & accolades under his leadership.
 
-Contribution: 2020-06-15 00:00
+Toshendra has worked on many Ethereum based projects for many companies & individuals for their coins & Initial Coin Offering (ICO).
 
-Contribution: 2020-06-15 00:01
+He is a well-known instructor & speaker in Blockchain space and taught more than 12,000 students worldwide spread in 148+ countries. He is also the part of Forbes India 30Under30 List of 2016 in Technology space.
 
-Contribution: 2020-06-15 00:02
+You can find him on: 
+* [Facebook](https://www.facebook.com/toshendra11)
+* [LinkedIn](https://linkedin.com/in/toshendra)
+* [Twitter](https://www.twitter.com/toshendrasharma)
+* [Tosh Academy](https://www.toshacademy.com)
+* [Toshblocks](https://www.toshblocks.com/)
+* [Udemy](https://www.udemy.com/user/toshendrasharma2/)
+* [Podacasts](http://www.buzzsprout.com/134645)
 
-Contribution: 2020-06-15 00:03
 
-Contribution: 2020-06-15 00:04
-
-Contribution: 2020-06-16 00:00
-
-Contribution: 2020-06-16 00:01
-
-Contribution: 2020-06-16 00:02
-
-Contribution: 2020-06-17 00:00
-
-Contribution: 2020-06-17 00:01
-
-Contribution: 2020-06-17 00:02
-
-Contribution: 2020-06-17 00:03
-
-Contribution: 2020-06-17 00:04
-
-Contribution: 2020-06-18 00:00
-
-Contribution: 2020-06-18 00:01
-
-Contribution: 2020-06-20 00:00
-
-Contribution: 2020-06-20 00:01
-
-Contribution: 2020-06-20 00:02
-
-Contribution: 2020-06-20 00:03
-
-Contribution: 2020-06-21 00:00
-
-Contribution: 2020-06-21 00:01
-
-Contribution: 2020-06-21 00:02
-
-Contribution: 2020-06-23 00:00
-
-Contribution: 2020-06-23 00:01
-
-Contribution: 2020-06-24 00:00
-
-Contribution: 2020-06-24 00:01
-
-Contribution: 2020-06-25 00:00
-
-Contribution: 2020-06-25 00:01
-
-Contribution: 2020-06-26 00:00
-
-Contribution: 2020-06-26 00:01
-
-Contribution: 2020-06-26 00:02
-
-Contribution: 2020-06-27 00:00
-
-Contribution: 2020-06-28 00:00
-
-Contribution: 2020-06-28 00:01
-
-Contribution: 2020-06-28 00:02
-
-Contribution: 2020-06-28 00:03
-
-Contribution: 2020-06-29 00:00
-
-Contribution: 2020-06-29 00:01
-
-Contribution: 2020-06-29 00:02
-
-Contribution: 2020-07-02 00:00
-
-Contribution: 2020-07-03 00:00
-
-Contribution: 2020-07-03 00:01
-
-Contribution: 2020-07-03 00:02
-
-Contribution: 2020-07-03 00:03
-
-Contribution: 2020-07-04 00:00
-
-Contribution: 2020-07-04 00:01
-
-Contribution: 2020-07-04 00:02
-
-Contribution: 2020-07-06 00:00
-
-Contribution: 2020-07-06 00:01
-
-Contribution: 2020-07-07 00:00
-
-Contribution: 2020-07-07 00:01
-
-Contribution: 2020-07-07 00:02
-
-Contribution: 2020-07-10 00:00
-
-Contribution: 2020-07-10 00:01
-
-Contribution: 2020-07-10 00:02
-
-Contribution: 2020-07-10 00:03
-
-Contribution: 2020-07-10 00:04
-
-Contribution: 2020-07-11 00:00
-
-Contribution: 2020-07-11 00:01
-
-Contribution: 2020-07-11 00:02
-
-Contribution: 2020-07-11 00:03
-
-Contribution: 2020-07-14 00:00
-
-Contribution: 2020-07-14 00:01
-
-Contribution: 2020-07-14 00:02
-
-Contribution: 2020-07-14 00:03
-
-Contribution: 2020-07-14 00:04
-
-Contribution: 2020-07-16 00:00
-
-Contribution: 2020-07-16 00:01
-
-Contribution: 2020-07-16 00:02
-
-Contribution: 2020-07-16 00:03
-
-Contribution: 2020-07-16 00:04
-
-Contribution: 2020-07-17 00:00
-
-Contribution: 2020-07-17 00:01
-
-Contribution: 2020-07-17 00:02
-
-Contribution: 2020-07-17 00:03
-
-Contribution: 2020-07-17 00:04
-
-Contribution: 2020-07-21 00:00
-
-Contribution: 2020-07-26 00:00
-
-Contribution: 2020-07-29 00:00
-
-Contribution: 2020-07-29 00:01
-
-Contribution: 2020-07-29 00:02
-
-Contribution: 2020-07-30 00:00
-
-Contribution: 2020-07-30 00:01
-
-Contribution: 2020-07-30 00:02
-
-Contribution: 2020-07-30 00:03
-
-Contribution: 2020-07-30 00:04
-
-Contribution: 2020-08-01 00:00
-
-Contribution: 2020-08-02 00:00
-
-Contribution: 2020-08-04 00:00
-
-Contribution: 2020-08-04 00:01
-
-Contribution: 2020-08-05 00:00
-
-Contribution: 2020-08-05 00:01
-
-Contribution: 2020-08-06 00:00
-
-Contribution: 2020-08-06 00:01
-
-Contribution: 2020-08-06 00:02
-
-Contribution: 2020-08-06 00:03
-
-Contribution: 2020-08-09 00:00
-
-Contribution: 2020-08-12 00:00
-
-Contribution: 2020-08-12 00:01
-
-Contribution: 2020-08-12 00:02
-
-Contribution: 2020-08-14 00:00
-
-Contribution: 2020-08-14 00:01
-
-Contribution: 2020-08-14 00:02
-
-Contribution: 2020-08-16 00:00
-
-Contribution: 2020-08-16 00:01
-
-Contribution: 2020-08-16 00:02
-
-Contribution: 2020-08-17 00:00
-
-Contribution: 2020-08-17 00:01
-
-Contribution: 2020-08-17 00:02
-
-Contribution: 2020-08-17 00:03
-
-Contribution: 2020-08-19 00:00
-
-Contribution: 2020-08-19 00:01
-
-Contribution: 2020-08-19 00:02
-
-Contribution: 2020-08-19 00:03
-
-Contribution: 2020-08-19 00:04
-
-Contribution: 2020-08-20 00:00
-
-Contribution: 2020-08-20 00:01
-
-Contribution: 2020-08-21 00:00
-
-Contribution: 2020-08-21 00:01
-
-Contribution: 2020-08-21 00:02
-
-Contribution: 2020-08-21 00:03
-
-Contribution: 2020-08-23 00:00
-
-Contribution: 2020-08-23 00:01
-
-Contribution: 2020-08-23 00:02
-
-Contribution: 2020-08-23 00:03
-
-Contribution: 2020-08-28 00:00
-
-Contribution: 2020-08-29 00:00
-
-Contribution: 2020-08-30 00:00
-
-Contribution: 2020-08-30 00:01
-
-Contribution: 2020-08-30 00:02
-
-Contribution: 2020-08-31 00:00
-
-Contribution: 2020-08-31 00:01
-
-Contribution: 2020-08-31 00:02
-
-Contribution: 2020-08-31 00:03
-
-Contribution: 2020-09-01 00:00
-
-Contribution: 2020-09-01 00:01
-
-Contribution: 2020-09-01 00:02
-
-Contribution: 2020-09-01 00:03
-
-Contribution: 2020-09-01 00:04
-
-Contribution: 2020-09-02 00:00
-
-Contribution: 2020-09-02 00:01
-
-Contribution: 2020-09-02 00:02
-
-Contribution: 2020-09-02 00:03
-
-Contribution: 2020-09-02 00:04
-
-Contribution: 2020-09-04 00:00
-
-Contribution: 2020-09-06 00:00
-
-Contribution: 2020-09-06 00:01
-
-Contribution: 2020-09-06 00:02
-
-Contribution: 2020-09-06 00:03
-
-Contribution: 2020-09-06 00:04
-
-Contribution: 2020-09-08 00:00
-
-Contribution: 2020-09-08 00:01
-
-Contribution: 2020-09-12 00:00
-
-Contribution: 2020-09-12 00:01
-
-Contribution: 2020-09-12 00:02
-
-Contribution: 2020-09-12 00:03
-
-Contribution: 2020-09-12 00:04
-
-Contribution: 2020-09-13 00:00
-
-Contribution: 2020-09-13 00:01
-
-Contribution: 2020-09-14 00:00
-
-Contribution: 2020-09-14 00:01
-
-Contribution: 2020-09-16 00:00
-
-Contribution: 2020-09-16 00:01
-
-Contribution: 2020-09-17 00:00
-
-Contribution: 2020-09-17 00:01
-
-Contribution: 2020-09-17 00:02
-
-Contribution: 2020-09-17 00:03
-
-Contribution: 2020-09-18 00:00
-
-Contribution: 2020-09-18 00:01
-
-Contribution: 2020-09-18 00:02
-
-Contribution: 2020-09-18 00:03
-
-Contribution: 2020-09-19 00:00
-
-Contribution: 2020-09-19 00:01
-
-Contribution: 2020-09-20 00:00
-
-Contribution: 2020-09-21 00:00
-
-Contribution: 2020-09-21 00:01
-
-Contribution: 2020-09-22 00:00
-
-Contribution: 2020-09-22 00:01
-
-Contribution: 2020-09-22 00:02
-
-Contribution: 2020-09-22 00:03
-
-Contribution: 2020-09-24 00:00
-
-Contribution: 2020-09-24 00:01
-
-Contribution: 2020-09-24 00:02
-
-Contribution: 2020-09-24 00:03
-
-Contribution: 2020-09-27 00:00
-
-Contribution: 2020-09-28 00:00
-
-Contribution: 2020-09-28 00:01
-
-Contribution: 2020-09-29 00:00
-
-Contribution: 2020-09-29 00:01
-
-Contribution: 2020-10-02 00:00
-
-Contribution: 2020-10-02 00:01
-
-Contribution: 2020-10-02 00:02
-
-Contribution: 2020-10-02 00:03
-
-Contribution: 2020-10-02 00:04
-
-Contribution: 2020-10-06 00:00
-
-Contribution: 2020-10-06 00:01
-
-Contribution: 2020-10-06 00:02
-
-Contribution: 2020-10-07 00:00
-
-Contribution: 2020-10-08 00:00
-
-Contribution: 2020-10-08 00:01
-
-Contribution: 2020-10-10 00:00
-
-Contribution: 2020-10-10 00:01
-
-Contribution: 2020-10-11 00:00
-
-Contribution: 2020-10-11 00:01
-
-Contribution: 2020-10-11 00:02
-
-Contribution: 2020-10-11 00:03
-
-Contribution: 2020-10-11 00:04
-
-Contribution: 2020-10-14 00:00
-
-Contribution: 2020-10-14 00:01
-
-Contribution: 2020-10-15 00:00
-
-Contribution: 2020-10-16 00:00
-
-Contribution: 2020-10-18 00:00
-
-Contribution: 2020-10-19 00:00
-
-Contribution: 2020-10-22 00:00
-
-Contribution: 2020-10-22 00:01
-
-Contribution: 2020-10-22 00:02
-
-Contribution: 2020-10-22 00:03
-
-Contribution: 2020-10-25 00:00
-
-Contribution: 2020-10-25 00:01
-
-Contribution: 2020-10-25 00:02
-
-Contribution: 2020-10-26 00:00
-
-Contribution: 2020-10-27 00:00
-
-Contribution: 2020-10-28 00:00
-
-Contribution: 2020-10-28 00:01
-
-Contribution: 2020-10-30 00:00
-
-Contribution: 2020-10-30 00:01
-
-Contribution: 2020-10-30 00:02
-
-Contribution: 2020-10-30 00:03
-
-Contribution: 2020-10-30 00:04
-
-Contribution: 2020-10-31 00:00
-
-Contribution: 2020-11-01 00:00
-
-Contribution: 2020-11-02 00:00
-
-Contribution: 2020-11-02 00:01
-
-Contribution: 2020-11-02 00:02
-
-Contribution: 2020-11-02 00:03
-
-Contribution: 2020-11-03 00:00
-
-Contribution: 2020-11-03 00:01
-
-Contribution: 2020-11-04 00:00
-
-Contribution: 2020-11-04 00:01
-
-Contribution: 2020-11-06 00:00
-
-Contribution: 2020-11-06 00:01
-
-Contribution: 2020-11-09 00:00
-
-Contribution: 2020-11-09 00:01
-
-Contribution: 2020-11-10 00:00
-
-Contribution: 2020-11-10 00:01
-
-Contribution: 2020-11-11 00:00
-
-Contribution: 2020-11-11 00:01
-
-Contribution: 2020-11-11 00:02
-
-Contribution: 2020-11-11 00:03
-
-Contribution: 2020-11-12 00:00
-
-Contribution: 2020-11-12 00:01
-
-Contribution: 2020-11-12 00:02
-
-Contribution: 2020-11-12 00:03
-
-Contribution: 2020-11-13 00:00
-
-Contribution: 2020-11-16 00:00
-
-Contribution: 2020-11-16 00:01
-
-Contribution: 2020-11-16 00:02
-
-Contribution: 2020-11-17 00:00
-
-Contribution: 2020-11-17 00:01
-
-Contribution: 2020-11-17 00:02
-
-Contribution: 2020-11-17 00:03
-
-Contribution: 2020-11-18 00:00
-
-Contribution: 2020-11-19 00:00
-
-Contribution: 2020-11-19 00:01
-
-Contribution: 2020-11-19 00:02
-
-Contribution: 2020-11-19 00:03
-
-Contribution: 2020-11-20 00:00
-
-Contribution: 2020-11-20 00:01
-
-Contribution: 2020-11-20 00:02
-
-Contribution: 2020-11-21 00:00
-
-Contribution: 2020-11-21 00:01
-
-Contribution: 2020-11-21 00:02
-
-Contribution: 2020-11-21 00:03
-
-Contribution: 2020-11-23 00:00
-
-Contribution: 2020-11-24 00:00
-
-Contribution: 2020-11-24 00:01
-
-Contribution: 2020-11-25 00:00
-
-Contribution: 2020-11-25 00:01
-
-Contribution: 2020-11-27 00:00
-
+License
+-------------
+[GPL v3](https://www.gnu.org/licenses/gpl-3.0.txt)
