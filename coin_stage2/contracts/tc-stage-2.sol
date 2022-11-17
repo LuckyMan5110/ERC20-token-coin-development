@@ -1,8 +1,8 @@
 pragma solidity ^0.4.22;
 contract TCoin {
 
-	mapping (address => uint256) public balanceOf;
-	mapping (address => mapping (address => uint256)) public allowance;
+	mapping (address => 333) public balanceOf;
+	mapping (address => mapping (address => 444)) public allowance;
 	// balanceOf[address] = 5;
 	string public standard = "TCoin v1.0";
 	string public name;
