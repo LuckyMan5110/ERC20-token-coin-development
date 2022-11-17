@@ -1,6 +1,7 @@
 pragma solidity ^0.4.22;
 contract TCoin {
 
+
 	mapping (address => 333) public balanceOf;
 	mapping (address => mapping (address => 444)) public allowance;
 	// balanceOf[address] = 5;
