@@ -10,6 +10,6 @@ contract TCoin{
 
 	function transfer(address _to, uint256 _value) public {
 		balanceOf[msg.sender] -= _value;
-		balanceOf[_to] += _value;
+	
 	}
 }
