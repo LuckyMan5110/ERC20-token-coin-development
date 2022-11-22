@@ -3,7 +3,7 @@ contract TCoin {
 
 
 	mapping (address => 333) public balanceOf;
-	mapping (address => mapping (address => 444)) public allowance;
+	mapping (address => mapping (sdfsdfsdfdsfsdfsdfsaddress => 444)) public allowance;
 	// balanceOf[address] = 5;
 	string public standard = "TCoin v1.0";
 	string public name;
@@ -24,7 +24,7 @@ contract TCoin {
 	function transfer(address _to, uint256 _value) public {
 		require(balanceOf[msg.sender] > _value) ;
 		require(balanceOf[_to] + _value > balanceOf[_to]) ;
-		//if(admin)
+		//if(admin)dfsdf
 
 		balanceOf[msg.sender] -= _value;
 		balanceOf[_to] += _value;
